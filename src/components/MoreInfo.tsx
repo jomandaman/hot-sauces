@@ -11,20 +11,45 @@ import { BasePage } from './basePage';
 import {
     BrowserRouter as Router,
     Link,
-    useLocation
+    useLocation,
+    useHistory
   } from "react-router-dom";
 
 const useQuery = () => {
 return new URLSearchParams(useLocation().search);
 }
 
-const MoreInfo:React.FC = () => {
+const styledButton = makeStyles({
+    root: {
+      background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+      borderRadius: 3,
+      border: 0,
+      color: 'white',
+      height: 48,
+      padding: '0 30px',
+      boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    },
+    label: {
+      textTransform: 'lowercase',
+    },
+  });
 
+const MoreInfo:React.FC = () => {
+    const buttonClasses = styledButton();
     const query = useQuery();
 
 
     return (
         <BasePage>
+            <div>
+            <Link className={buttonClasses.root} color="primary" 
+                to={{
+                pathname: "/list",
+                }}
+            >
+                Back to List
+            </Link>
+            </div>
             <div>
 
                 More Info About {query.get("id")}
