@@ -78,6 +78,9 @@ const styledLayout = makeStyles({
     display: "flex",
     justifyContent: "center",
   },
+  imageContainerCont: {
+    width: "100%",
+  },
   image: {
 
   },
@@ -105,7 +108,7 @@ const MoreInfo: React.FC = () => {
       
       <Grid container className={layoutClasses.root}>
         {/* column one */}
-        <Grid lg={5} item>
+        <Grid lg={5} item className={layoutClasses.imageContainerCont}>
             <Grid item className={layoutClasses.imageContainer}>
               <img
                 className={layoutClasses.image}
