@@ -8,11 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link,
-  Redirect,
 } from "react-router-dom";
 
 interface IProps {
@@ -91,9 +87,14 @@ const styledType = makeStyles({
     color: "#d21e45",
     fontSize: "3em",
     fontWeight: "bold",
-    "&:hover": {
-      
-    },
+  },
+  subtitle: {
+    fontSize: "0.875rem",
+    fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
+    fontWeight: 400,
+    lineHeight: 1.43,
+    letterSpacing: "0.01071em",
+    minHeight: "50px",
   },
   delete: {
     textTransform: "lowercase",
@@ -132,8 +133,8 @@ const Item: React.FC<IProps> = ({
             <Typography gutterBottom variant="h5" component="h5" className={typeClasses.h5}>
               {title}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              <p style={{ minHeight: "50px" }}>{subtitle}</p>
+            <Typography variant="body2" color="textSecondary" className={typeClasses.subtitle}>
+              {subtitle}
             </Typography>
           </CardContent>
         </CardActionArea>

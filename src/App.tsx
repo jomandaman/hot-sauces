@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-//import './components/styles.css';
 import List from './components/List';
 import MoreInfo from './components/MoreInfo';
 // https://reactrouter.com/web/example/basic
@@ -8,7 +7,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect
 } from "react-router-dom";
 

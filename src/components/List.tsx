@@ -37,7 +37,8 @@ const List:React.FC = () => {
 	}
 
 	const handleUndo = () => {
-		const bringBack = arr;
+		// temp array to use in setArr()...found better way below
+		// const bringBack = arr;
 		if (deleted.current.length > 0) {
 			// we are guaranteeing there is something is in the array
 			//bringBack.push(deleted.current.pop()!);

@@ -33,8 +33,6 @@ const useStyles = makeStyles({
 
 export const BasePage:React.FC = (props) => {
     
-    
-
     const classes = useStyles();
 
     return (

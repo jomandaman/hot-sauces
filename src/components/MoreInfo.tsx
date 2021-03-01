@@ -5,10 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import { BasePage } from "./basePage";
 
 import {
-  BrowserRouter as Router,
   Link,
   useLocation,
-  useHistory,
+  // useHistory -> to make a better back button
 } from "react-router-dom";
 //A USVString, which will be parsed from application/x-www-form-urlencoded format. A leading '?' character is ignored.
 // http://localhost:3000/more-info?id=5
@@ -56,15 +55,24 @@ const styledLayout = makeStyles({
   title: {
     fontSize: "4.5rem",
     fontWeight: "bold",
-    padding: "60px 0 15px",
+    color: "#d21e45",
+    padding: "90px 0 15px",
     fontFamily: `'Amatic SC', cursive`,
   },
   subtitle: {
+    color: `rgba(0, 0, 0, 0.77)`,
     fontSize: "1.2em",
     marginBottom: 40,
+    paddingRight: 50,
   },
   description: {
-    //something
+    fontSize: "0.875rem",
+    fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
+    fontWeight: 400,
+    lineHeight: 1.43,
+    color: `rgba(0, 0, 0, 0.54)`,
+    letterSpacing: "0.01071em",
+    marginBottom: 40,
   },
   imageContainer: {
     display: "flex",
@@ -107,7 +115,7 @@ const MoreInfo: React.FC = () => {
             </Grid>
         </Grid>
         {/* column two */}
-        <Grid lg={5} item >
+        <Grid lg={4} item >
           <Grid item className={layoutClasses.title}>{hotSauce.title}</Grid>
           <Grid item className={layoutClasses.subtitle}>{hotSauce.subtitle}</Grid>
           <Grid item className={layoutClasses.description}>{hotSauce.description}</Grid>
