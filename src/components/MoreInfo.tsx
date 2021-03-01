@@ -100,7 +100,7 @@ const MoreInfo: React.FC = () => {
           className={buttonClasses.root}
           color="primary"
           to={{
-            pathname: "/list",
+            pathname: "/hot-sauces",
           }}
         >
           Back to List

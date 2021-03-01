@@ -14,14 +14,14 @@ const App:React.FC = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/list">
+        <Route path="/hot-sauces">
           <List />
         </Route>
         <Route path="/more-info">
           <MoreInfo />
         </Route>
         <Route exact path="*">
-          <Redirect to="/list"/>
+          <Redirect to="/hot-sauces"/>
         </Route>
       </Switch>
     </Router>
