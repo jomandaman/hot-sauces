@@ -80,6 +80,7 @@ const styledLayout = makeStyles({
   },
   imageContainerCont: {
     width: "100%",
+    overflow: "hidden",
   },
   image: {
 

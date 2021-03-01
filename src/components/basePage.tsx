@@ -28,6 +28,8 @@ const useStyles = makeStyles({
   h2: {
     fontSize: "5.75rem",
     fontFamily: `'Amatic SC', cursive`,
+    lineHeight: .9,
+    paddingRight: 20,
   }
 });
 
