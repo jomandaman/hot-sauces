@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+//import './components/styles.css';
 import List from './components/List';
 import MoreInfo from './components/MoreInfo';
 // https://reactrouter.com/web/example/basic
@@ -15,9 +16,6 @@ const App:React.FC = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Redirect to="/list"/>
-        </Route>
         <Route path="/list">
           <List />
         </Route>

@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+# Hot Sauce List App
+A lightweight 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,35 +1,48 @@
 import React from 'react';
-import Item from './Item';
-import {hotSauces, HotSauce} from './hotsauces';
-import Grid from '@material-ui/core/Grid';
+import '../App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import { Alert } from '@material-ui/lab';
-import './styles.css';
+
+const useStyles = makeStyles({
+  root: {
+    //maxWidth: 345,
+  },
+  media: {
+    //width: 360,
+  },
+  header: {
+    backgroundColor: "gray",
+      backgroundImage: `url("https://josiahzacharias.com/wp-content/uploads/2021/03/Header2.jpg")`,
+      backgroundSize: "cover",
+      backgroundPosition: "bottom center",
+      minHeight: 300,
+      display: "flex",
+      height: "100%",
+      marginBottom: 40,
+  },
+  headerText: {
+      display: "inline-block",
+    alignSelf: "flex-end",
+  },
+  h2: {
+    fontSize: "5.75rem",
+    fontFamily: `'Amatic SC', cursive`,
+  }
+});
 
 export const BasePage:React.FC = (props) => {
     
-    const useStyles = makeStyles({
-        root: {
-          //maxWidth: 345,
-        },
-        media: {
-          //width: 360,
-        },
-    });
+    
 
     const classes = useStyles();
 
     return (
         <>
-        <div style={{
-            backgroundColor: "gray"
-        }}>
-            <Container maxWidth="lg" className={classes.root}>
-                <Typography variant="h2" component="h2" gutterBottom >
-                Hot Sauce List 2
+        <div className={classes.header} >
+            <Container maxWidth="lg" className={classes.headerText}>
+                <Typography variant="h2" className={classes.h2} gutterBottom >
+                    Guide to the <strong>best hot sauces</strong>
                 </Typography>
             </Container>
         </div>
