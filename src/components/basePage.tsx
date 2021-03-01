@@ -6,10 +6,8 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    //maxWidth: 345,
   },
   media: {
-    //width: 360,
   },
   header: {
     backgroundColor: "gray",

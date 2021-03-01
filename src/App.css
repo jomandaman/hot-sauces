@@ -4,3 +4,7 @@ h2 {
     color: lightgray;
     font-family: 'Amatic SC', cursive;
 }
+
+#root {
+    background: linear-gradient(180deg, rgb(211 123 67 / 46%) 0%, rgb(233 160 104 / 0%) 42%);
+}
