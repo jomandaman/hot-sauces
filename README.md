@@ -24,7 +24,7 @@ This would be a similar expectation to clients (or internal designers) to provid
 aspect ratios so as not to break the layout.
 
 Overall if more time was given, my intention is to have a larger image as the background with a single 
-row of sliding cards, inspired by : https://dribbble.com/shots/14441287--Exploration-Food-Website
+row of sliding cards, with [this inspiration](https://dribbble.com/shots/14441287--Exploration-Food-Website)
 
 ## Limitations and Improvements
 The "undo" function was an important UX decision based upon the simple fact that people easily make mistakes.
@@ -43,10 +43,12 @@ Thanks for checking it out!
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Installation
-In your terminal, create a new folder to store the project and navigate inside.
-Type git clone `https://github.com/jomandaman/hot-sauces` and hit enter.
-Run with `npm install`
-And `npm start`
+In your terminal, create a new folder to store the project, navigate inside and enter the following:
+```
+git clone https://github.com/jomandaman/hot-sauces
+npm install
+npm start 
+```
 
 ## Available Scripts
 
